@@ -1,0 +1,154 @@
+.screen-1 {
+	background: url('../img/head_1/bg.jpg') center / cover no-repeat;
+}
+
+.screen-1__body {
+	min-height: 100vh;
+	box-sizing: border-box;
+	display: flex;
+	max-width: 565px;
+	padding-top: 135px;
+	padding-left: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.screen-1__title {
+	margin-bottom: 29px;
+	margin-top: 55px;
+	font-size: 40px;
+	color: white;
+	font-family: $museo;
+	word-spacing: 0.25em;
+	text-transform: uppercase;
+}
+.screen-1__text {
+	padding-right: 50px;
+	margin-bottom: 94px;
+	font-size: 26px;
+	color: white;
+	line-height: 1.55em;
+	font-family: $raleway;
+	letter-spacing: 0.007em;
+}
+.screen-1__buttons {
+	margin-left: -30px;
+}
+.screen-1__button {
+	padding: 28px 70px 28px 65px;
+	margin-left: 30px;
+	font-size: 20px;
+	font-weight: 500;
+
+	&.btn-square_google {
+		padding-left: 80px;
+		padding-right: 30px;
+		background-position: 15% 50%;
+		font-weight: 600;
+	}
+}
+
+@media (max-width: 1080px) {
+	.screen-1__body {
+		max-width: 480px;
+	}
+
+	.screen-1__title {
+		word-spacing: 0.15em;
+	}
+
+	.screen-1__button {
+		padding: 24px 50px 24px 45px;
+
+		&.btn-square_google {
+			padding-left: 60px;
+			padding-right: 15px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.screen-1 {
+		background-image: url('../../img/head_1/bg-mobile.jpg');
+	}
+
+	.screen-1__body {
+		max-width: none;
+		padding-left: 50px;
+	}
+
+	.screen-1__title {
+		margin-bottom: 80px;
+		padding-right: 50px;
+	}
+
+	.screen-1__text {
+		margin-bottom: 130px;
+		line-height: 1.8em;
+	}
+}
+
+@media (max-width: 600px) {
+	.screen-1__body {
+		padding-left: 20px;
+		padding-right: 20px;
+		align-items: center;
+	}
+
+	.screen-1__title {
+		padding: 0px;
+		margin-bottom: 50px;
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.screen-1__text {
+		padding: 0px;
+		margin-bottom: 80px;
+		text-align: center;
+		font-size: 24px;
+	}
+
+	.screen-1__buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.screen-1__button {
+		margin-bottom: 30px;
+		
+		&:last-child {
+			margin-bottom: none;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.screen-1__body {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.screen-1__title {
+		font-size: 26px;
+		margin-bottom: 40px;
+	}
+
+	.screen-1__text {
+		font-size: 18px;
+		padding: 0px 10px;
+		margin-bottom: 40px;
+	}
+
+	.screen-1__button {
+		font-size: 15px;
+		padding: 20px 30px 20px 35px;
+		&.btn-square_google {
+			padding-left: 45px;
+			padding-right: 10px;
+			background-size: 25px;
+		}
+	}
+}

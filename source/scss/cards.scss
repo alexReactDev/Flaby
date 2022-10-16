@@ -1,0 +1,47 @@
+@mixin card($basis, $fz, $lh, $titleFZ, $maxW) {
+	flex-basis: $basis;
+	max-width: $maxW;
+	.card__title {
+		font-size: $titleFZ;
+		color: #494949;
+		font-weight: 700;
+	}
+	.card__body {
+		color: #7c7c7c;
+		font-size: $fz;
+		line-height: $lh;
+		font-weight: 500;
+	}
+}
+
+.cards {
+	display: flex;
+}
+.card {
+}
+.card__img {
+}
+.card__body {
+}
+.card__text {
+}
+.card__icons {
+	display: flex;
+}
+.card__icon {
+}
+.card__title {
+}
+.card__list {
+}
+.card__list-item {
+	list-style: none;
+
+	a {
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

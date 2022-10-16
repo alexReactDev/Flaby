@@ -1,0 +1,22 @@
+.burger {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		left: 0px;
+		right: 0px;
+	}
+
+	&::before {
+		top: 0px;
+	}
+
+	&::after {
+		bottom: 1px;
+	}
+}
