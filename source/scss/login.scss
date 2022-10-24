@@ -22,6 +22,7 @@
 	}
 
 	&__body {
+		margin: 40px;
 		box-sizing: border-box;
 		position: relative;
 		min-width: 400px;
@@ -101,5 +102,34 @@
 		padding: 15px 20px;
 		text-align: center;
 		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 500px) {
+	.login {
+		flex-direction: row;
+	}
+
+	.login__body {
+		flex: 1;
+		min-width: 0px;
+	}
+}
+
+@media (max-width: 450px) {
+	.login__body {
+		margin: 20px;
+	}
+
+	.login__title {
+		margin: 20px 0px;
+	}
+
+	.login__form {
+		padding: 20px;
+	}
+
+	.login__field {
+		margin-bottom: 10px;
 	}
 }

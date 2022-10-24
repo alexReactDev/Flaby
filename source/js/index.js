@@ -11,6 +11,15 @@ window.onload = () => {
 		card.onclick = cardClickHandler;
 	}
 
+	const menuItems = document.querySelectorAll(".nav__item");
+	for (let item of menuItems) {
+		item.addEventListener("click", (e) => {
+			document.querySelector('.header__menu').classList.remove("header__menu_active");
+			document.body.classList.remove("block-scroll");
+			document.querySelector(".header__burger").classList.remove("header__burger_active");
+		})
+	}
+
 	//Set up slider
 	new Swiper(".screen-5__replies", {
 		navigation: {
