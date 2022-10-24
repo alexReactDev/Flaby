@@ -1,5 +1,5 @@
 .screen-1 {
-	background: url('../../img/head_1/bg.jpg') center / cover no-repeat;
+	background: url('../img/head_1/bg.jpg') center / cover no-repeat;
 }
 
 .screen-1__body {
@@ -69,7 +69,7 @@
 
 @media (max-width: 800px) {
 	.screen-1 {
-		background-image: url('../../img/head_1/bg-mobile.jpg');
+		background-image: url('../img/head_1/bg-mobile.jpg');
 	}
 
 	.screen-1__body {

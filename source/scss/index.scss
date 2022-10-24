@@ -15,6 +15,10 @@ $roboto: 'Roboto Slab';
 //Nullstyle
 @import './nullstyle.scss';
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: $raleway;
 }
@@ -61,3 +65,4 @@ body {
 @import './screen-7.scss';
 @import './screen-8.scss';
 @import "./btn.scss";
+@import "./login.scss";
